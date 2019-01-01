@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="357" started-at="2018-12-31T05:21:52Z" finished-at="2018-12-31T05:21:52Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="357" started-at="2018-12-31T05:21:52Z" finished-at="2018-12-31T05:21:52Z">
+      <class name="testcases.Test1">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testcases.Test1@56ac3a89]" name="setUp" is-config="true" duration-ms="177" started-at="2018-12-31T10:51:52Z" finished-at="2018-12-31T10:51:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="TC1_Home(java.util.LinkedHashMap)[pri:0, instance:testcases.Test1@56ac3a89]" name="TC1_Home" duration-ms="5" started-at="2018-12-31T10:51:52Z" data-provider="Home" finished-at="2018-12-31T10:51:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{TestCaseName=TC1_Home1, TeseCaseDescription=Base Test case to check methods of Xpath generation, CaseToRun=N, Pass/Fail/Skip=, TimeLoad=, FailCaseLog=}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[TC1_Home1 is set to Skip]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: TC1_Home1 is set to Skip
+	at testcases.Test1.TC1_Home(Test1.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC1_Home -->
+        <test-method status="PASS" signature="browserControl()[pri:0, instance:testcases.Test1@56ac3a89]" name="browserControl" is-config="true" duration-ms="0" started-at="2018-12-31T10:51:52Z" finished-at="2018-12-31T10:51:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserControl -->
+        <test-method status="FAIL" signature="afterClass()[pri:0, instance:testcases.Test1@56ac3a89]" name="afterClass" is-config="true" duration-ms="0" started-at="2018-12-31T10:51:52Z" finished-at="2018-12-31T10:51:52Z">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[org/apache/commons/collections4/bidimap/TreeBidiMap]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: org/apache/commons/collections4/bidimap/TreeBidiMap
+	at org.apache.poi.hpsf.Section.<init>(Section.java:178)
+	at org.apache.poi.hpsf.MutableSection.<init>(MutableSection.java:41)
+	at org.apache.poi.hpsf.PropertySet.init(PropertySet.java:494)
+	at org.apache.poi.hpsf.PropertySet.<init>(PropertySet.java:196)
+	at org.apache.poi.hpsf.MutablePropertySet.<init>(MutablePropertySet.java:44)
+	at org.apache.poi.hpsf.SpecialPropertySet.<init>(SpecialPropertySet.java:47)
+	at org.apache.poi.hpsf.DocumentSummaryInformation.<init>(DocumentSummaryInformation.java:99)
+	at org.apache.poi.hpsf.PropertySetFactory.create(PropertySetFactory.java:116)
+	at org.apache.poi.POIDocument.getPropertySet(POIDocument.java:236)
+	at org.apache.poi.POIDocument.getPropertySet(POIDocument.java:197)
+	at org.apache.poi.POIDocument.readPropertySet(POIDocument.java:175)
+	at org.apache.poi.POIDocument.readProperties(POIDocument.java:158)
+	at org.apache.poi.hssf.usermodel.HSSFWorkbook.updateEncryptionInfo(HSSFWorkbook.java:2295)
+	at org.apache.poi.hssf.usermodel.HSSFWorkbook.getBytes(HSSFWorkbook.java:1506)
+	at org.apache.poi.hssf.usermodel.HSSFWorkbook.write(HSSFWorkbook.java:1428)
+	at org.apache.poi.hssf.usermodel.HSSFWorkbook.write(HSSFWorkbook.java:1414)
+	at utility.Read_XLS.writeResultTC_Result(Read_XLS.java:555)
+	at utility.SuiteUtility.writeResultUtility6(SuiteUtility.java:43)
+	at testcases.Test1.afterClass(Test1.java:130)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:144)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:217)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:115)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.bidimap.TreeBidiMap
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 44 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- testcases.Test1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

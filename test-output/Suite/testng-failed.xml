@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="11" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods" data-provider-thread-count="1">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="utility.ScreenshotUtility"/>
+    <listener class-name="utility.TestListener"/>
+  </listeners>
+  <test name="Test(failed)" parallel="methods">
+    <classes>
+      <class name="testcases.Test1">
+        <methods>
+          <include name="afterClass"/>
+          <include name="setUp"/>
+          <include name="TC1_Home" invocation-numbers="0"/>
+          <include name="browserControl"/>
+        </methods>
+      </class> <!-- testcases.Test1 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
